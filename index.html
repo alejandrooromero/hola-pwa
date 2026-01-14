@@ -12,19 +12,47 @@
   <meta name="theme-color" content="#2e7d32">
 </head>
 <body>
-<h1>📒 Mis Gastos</h1>
 
-<input type="text" id="concepto" placeholder="Concepto (ej: verduras)">
-<br><br>
+  <h1>📊 Mi Feria</h1>
 
-<input type="number" id="monto" placeholder="Monto">
-<br><br>
+  <!-- MENÚ PRINCIPAL -->
+  <nav id="menu">
+    <button onclick="mostrarVista('stock')">📦 Stock</button>
+    <button onclick="mostrarVista('compras')">🛒 Compras</button>
+    <button onclick="mostrarVista('ventas')">💰 Ventas</button>
+    <button onclick="mostrarVista('contabilidad')">📒 Contabilidad</button>
+    <button onclick="mostrarVista('configuracion')">⚙️ Configuración</button>
+  </nav>
 
-<button onclick="agregarGasto()">➕ Agregar gasto</button>
+  <hr>
 
-<h2>Listado</h2>
-<ul id="lista-gastos"></ul>
+  <!-- VISTAS -->
+  <section id="stock" class="vista">
+    <h2>📦 Stock</h2>
+    <p>Hola, estamos en la sección STOCK</p>
+  </section>
 
+  <section id="compras" class="vista">
+    <h2>🛒 Compras</h2>
+    <p>Hola, estamos en la sección COMPRAS</p>
+  </section>
+
+  <section id="ventas" class="vista">
+    <h2>💰 Ventas</h2>
+    <p>Hola, estamos en la sección VENTAS</p>
+  </section>
+
+  <section id="contabilidad" class="vista">
+    <h2>📒 Contabilidad</h2>
+    <p>Hola, estamos en la sección CONTABILIDAD</p>
+  </section>
+
+  <section id="configuracion" class="vista">
+    <h2>⚙️ Configuración</h2>
+    <p>Hola, estamos en la sección CONFIGURACIÓN</p>
+  </section>
+
+  <script src="app.js"></script>
 </body>
 <script src="app.js"></script>
 </html>

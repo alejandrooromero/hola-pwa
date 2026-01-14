@@ -1,0 +1,10 @@
+nav button {
+  margin: 5px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.vista {
+  display: none;
+  margin-top: 20px;
+}
